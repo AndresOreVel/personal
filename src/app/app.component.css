@@ -266,10 +266,11 @@ img{
 
 .proyectos img{
     width: 500px;
-    height: 500px;
+    height: auto;
     border-radius: 20px;
     transition: transform 0.5s ease-in-out;
     object-fit: contain;
+    margin: 30px 0;
 }
 
 .proyectos img:hover{
@@ -279,6 +280,7 @@ img{
 
 .lenguages{
     display: flex;
+    justify-content: center;
     flex-wrap: wrap;
     gap: 10px;
 }
@@ -322,18 +324,31 @@ img{
         text-align: center;
     }
 
-    .second, .myself, .tools, .config{
+    .second, .myself, .tools, .config, .projects{
         display: flex;
         flex-flow: column wrap;
+        width: 100%;
+    }
+
+    .contact{
+        display: flex;
+        flex-flow: row wrap;
+        width: 100%;
     }
 
     .projects, .proyectos{
         display: flex;
         flex-flow: column wrap;
+        width: 100%;
     }
 
     .proyectos img{
         transition: none;
+        width: 100%;
+        height: auto;
+        border-radius: 20px;
+        object-fit: contain;
+        margin: 30px 0;
     }
 
     .proyectos img:hover{
@@ -343,12 +358,14 @@ img{
     .frameworks{
         display: flex;
         flex-direction: column;
+        width: 100%;
     }
 
     .tecnologies{
         display: flex;
         flex-flow: column wrap;
         margin-block-end: 50px;
+        width: 100%;
     }
 
 }
