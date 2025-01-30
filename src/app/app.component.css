@@ -1,0 +1,354 @@
+/*
+Otra forma de hacer que ocupe todo el alto y ancho de pantalla
+es definir propiedades de 100 vh para el height y 100 vw para el width
+*/
+
+
+
+:root{
+    --Poppins-font: "Poppins", sans-serif;
+    --Montserrat-font: "Montserrat", serif;
+}
+
+.wrapped{
+    height: 100%;
+    width: 100%;
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: 250px 1fr;
+    grid-template-rows: auto 1fr auto;
+    grid-template-areas:
+    "header header header"
+    "content content content"
+    "footer footer footer";
+}
+
+.header{
+    grid-area: header;
+    font-size: 2vw;
+}
+
+.content{
+    grid-area: content;
+    font-size: 1.5vw;
+    overflow-y: auto;
+}
+
+.footer{
+    grid-area: footer;
+    font-size: 1.5vw;
+}
+
+.box {
+    
+    color: black;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 150%;
+    height: 100%; 
+}
+
+.header, .footer {
+    background-color: #999;
+    height: 10vh;
+}
+
+.sidebar{
+    background-color: #ccc;
+    color: #444;
+}
+
+h2{
+    margin-bottom: 40px;
+    font-family: var(--Montserrat-font);
+}
+
+h3{
+    margin: 30px 0;
+    font-family: var(--Montserrat-font);
+}
+
+article{
+    max-inline-size: 66ch;
+    line-height: 1.65;
+    font-family: var(--Poppins-font);
+}
+
+p{
+    font-family: var(--Poppins-font);
+}
+
+a{
+    text-decoration: none;
+    color: white;
+    font-family: system-ui;
+    padding: 10px 20px;
+    background-color: #ad5dcc;
+    border-radius: 5px;
+}
+
+a:hover{
+    background-color: #8b2eb0;
+    transition: .4s ease;
+}
+
+.personal .second .display{
+    display: flex;
+    flex-flow: column wrap;
+    gap: 20px;
+    margin-bottom: 40px;
+}
+
+img{
+    width: 60px;
+    height: 60px;
+}
+
+.contact{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.contact img{
+    width: 40px;
+    height: 40px;
+}
+
+.frameworks{
+    margin-block-start: 100px;
+}
+
+.personal{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.theming{
+    display: flex;
+    justify-content: end;
+    align-items: end;
+    margin-right: 10px;
+}
+
+.personal .information img{
+    border-radius: 50px;
+}
+
+.personal .second{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-block-end: 100px;
+}
+
+.personal .second img{
+    width: 25px;
+    height: 25px;
+}
+
+.personal .second h2{
+    margin: 0;
+    background: linear-gradient(to right, #ad5dcc, #6198d3);
+    -webkit-background-clip: text; /*Para Chrome y Safari*/
+    background-clip: text;
+    color: transparent;
+}
+
+.myself{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 75px;
+}
+
+.myself img{
+    width: 200px;
+    height: 200px;
+    border-radius: 30px;
+    object-fit: contain;
+}
+
+.es{
+    color: #333;
+}
+
+.en{
+    color: #00a1ff;
+}
+
+.check{
+    position: relative;
+    width: 50px;
+}
+
+.check::before{
+    content: '';
+    position: absolute;
+    width: 50px;
+    height: 25px;
+    background: #333;
+    border-radius: 25px;
+}
+
+.check::after{
+    content: '';
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    background: #ffff;
+    border-radius: 25px;
+    transition: 0.25s;
+    border: 2px solid #333;
+    box-sizing: border-box;
+}
+
+.check:checked::after{
+    left: 25px;
+    border: 2px solid #00a1ff;
+}
+
+.check:checked::before{
+    background: #00a1ff;
+}
+
+.tecnologies{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+}
+
+.backend, .frontend, .config{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+.personal .second .tecnologies .backend img,
+.personal .second .tecnologies .frontend img,
+.personal .second .tools .config img
+{
+    width: 125px;
+    height: 125px;
+}
+
+.tools{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    margin-block-end: 100px;
+}
+
+.projects{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.projects h2{
+    margin-bottom: 10px;
+}
+
+.projects span{
+    padding: 1px 50px;
+    background-color: #8b2eb0;
+}
+
+.proyectos{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+}
+
+.proyectos img{
+    width: 500px;
+    height: 500px;
+    border-radius: 20px;
+    transition: transform 0.5s ease-in-out;
+    object-fit: contain;
+}
+
+.proyectos img:hover{
+    transform: scale(1.50);
+}
+
+
+.lenguages{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.lenguages div{
+    padding: 8px 10px;
+    border-radius: 8px;
+    background-color: #5a5555;
+    color: white;
+}
+
+.personal .second .display .imagenes{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.personal .second .display .imagenes img{
+    width: 100px;
+    height: 100px;
+}
+
+.personal .second .display .imagenes img:nth-of-type(2){
+    width: 150px;
+    height: 100px;
+}
+
+.icons{
+    display: flex;
+    justify-content: center;
+}
+
+@media screen and (max-width: 576px) {
+    .wrapped{
+        display: flex;
+        flex-direction: column;
+        padding: 12px;
+    }
+
+    .myself div{
+        text-align: center;
+    }
+
+    .second, .myself, .tools, .config{
+        display: flex;
+        flex-flow: column wrap;
+    }
+
+    .projects, .proyectos{
+        display: flex;
+        flex-flow: column wrap;
+    }
+
+    .proyectos img{
+        transition: none;
+    }
+
+    .proyectos img:hover{
+        transform: none;
+    }
+
+    .frameworks{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .tecnologies{
+        display: flex;
+        flex-flow: column wrap;
+        margin-block-end: 50px;
+    }
+
+}
