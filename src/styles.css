@@ -55,4 +55,8 @@ html, body{
   h1, h2, h3, p{
     color: var(--text-color);
   }
+
+  img{
+    filter: brightness(.8) contrast(1.2);
+  }
   
