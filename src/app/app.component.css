@@ -243,28 +243,40 @@ img{
     margin-block-end: 100px;
 }
 
-.projects{
+.projects, .projects-front{
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.projects h2{
+.projects h2, .projects-front h2{
     margin-bottom: 10px;
 }
 
-.projects span{
+.projects span, .projects-front span{
     padding: 1px 50px;
     background-color: #8b2eb0;
 }
 
-.proyectos{
+.proyectos, .proyectos-front{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+    grid-template-areas: 
+    "start end";
     gap: 10px;
 }
 
-.proyectos img{
+.image1{
+    grid-area: start;
+    align-self: center;
+}
+
+.image2{
+    grid-area: end;
+    align-self: center;
+}
+
+.proyectos img, .proyectos-front img{
     width: 500px;
     height: auto;
     border-radius: 20px;
@@ -320,11 +332,11 @@ img{
         padding: 12px;
     }
 
-    .myself div{
+    .myself div, .personal .second article{
         text-align: center;
     }
 
-    .second, .myself, .tools, .config, .projects{
+    .second, .myself, .tools, .config, .projects, .projects-front{
         display: flex;
         flex-flow: column wrap;
         width: 100%;
@@ -336,13 +348,13 @@ img{
         width: 100%;
     }
 
-    .projects, .proyectos{
+    .projects, .proyectos, .projects-front, .proyectos-front{
         display: flex;
         flex-flow: column wrap;
         width: 100%;
     }
 
-    .proyectos img{
+    .proyectos img, .proyectos-front img{
         transition: none;
         width: 100%;
         height: auto;
