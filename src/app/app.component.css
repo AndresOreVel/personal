@@ -338,7 +338,7 @@ img{
         text-align: center;
     }
 
-    .second, .myself, .tools, .config, .projects, .projects-front{
+    .personal, .second, .myself, .tools, .config, .projects, .projects-front{
         display: flex;
         flex-flow: column wrap;
         width: 100%;
