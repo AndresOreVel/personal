@@ -346,8 +346,38 @@ img{
 
     .contact{
         display: flex;
-        flex-flow: row wrap;
+        flex-flow: column;
+        align-items: center;
+        text-align: center;
+        gap: 10px;
         width: 100%;
+    }
+
+    .contact img{
+        max-width: 40px;
+        height: auto;
+    }
+
+    .imagenes{
+        width: 100%;
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    .icons{
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    .icons img{
+        max-width: 80px;
+        height: auto;
+    }
+
+    .icons img:nth-of-type(2){
+        max-width: 150px;
+        height: auto;
     }
 
     .projects, .proyectos, .projects-front, .proyectos-front{
