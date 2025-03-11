@@ -326,106 +326,105 @@ img{
 }
 
 @media screen and (max-width: 576px) {
-    .wrapped{
-        display: flex;
-        flex-direction: column;
-        padding: 12px;
-        overflow-x: hidden;
-        overflow-y: auto;
-    }
-
-    .myself div, .personal .second article{
+    h2, p{
         text-align: center;
     }
-
-    .personal, .second, .myself, .tools, .config, .projects, .projects-front{
+    .wrapped {
         display: flex;
-        flex-flow: column wrap;
-        width: 100%;
+        flex-direction: column;
+        gap: 1rem;
     }
 
-    .contact{
+    .header, .footer {
+        height: auto;
+        font-size: 5vw;
+        text-align: center;
+        padding: 10px 0;
+    }
+
+    .content {
+        font-size: 4vw;
+        padding: 12px;
+    }
+
+    .personal {
         display: flex;
         flex-direction: column;
         align-items: center;
-        text-align: center;
+        justify-content: center;
+    }
+
+    .myself {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .myself img {
+        width: 200px;
+        height: 200px;
+        border-radius: 30px;
+        object-fit: contain;
+    }
+
+    .tecnologies{
+        margin-bottom: 2rem;
+    }
+
+    .tecnologies, .tools {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        width: 100%;
+    }
+
+    .backend, .frontend{
+        width: 100%;
+    }
+
+    .backend img, .frontend img, .config img {
+        width: 60px;
+        height: 60px;
+    }
+
+    .projects, .projects-front {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .proyectos, .proyectos-front {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
         gap: 10px;
+    }
+
+    .proyectos img, .proyectos-front img {
         width: 100%;
-    }
-
-    .contact p{
-        max-width: 90%;
-        word-wrap: break-word;
-        overflow-wrap: break-word;
-    }
-
-    .contact img{
-        max-width: 40px;
         height: auto;
+        border-radius: 10px;
+        object-fit: cover;
     }
 
-    .imagenes{
-        width: 100%;
-        text-align: center;
-        margin-top: 20px;
+    .lenguages {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        gap: 5px;
     }
 
-    .imagenes h3{
-        max-width: 90%;
-        word-wrap: break-word;
-        overflow-wrap: break-word;
+    .lenguages div {
+        padding: 5px 8px;
+        border-radius: 5px;
+        font-size: 3vw;
     }
 
-    .icons{
+    .icons {
         display: flex;
         justify-content: center;
         gap: 10px;
     }
-
-    .icons img{
-        max-width: 80px;
-        height: auto;
-    }
-
-    .icons img:nth-of-type(2){
-        max-width: 150px;
-        height: auto;
-    }
-
-    .projects, .proyectos, .projects-front, .proyectos-front{
-        display: flex;
-        flex-flow: column wrap;
-        width: 100%;
-    }
-
-    .proyectos img, .proyectos-front img{
-        transition: none;
-        width: 100%;
-        height: auto;
-        border-radius: 20px;
-        object-fit: contain;
-        margin: 30px 0;
-    }
-
-    .proyectos img:hover{
-        transform: none;
-    }
-
-    .frameworks{
-        display: flex;
-        flex-direction: column;
-        width: 100%;
-    }
-
-    .tecnologies{
-        display: flex;
-        flex-flow: column wrap;
-        margin-block-end: 50px;
-        width: 100%;
-    }
-
-    a:focus{
-        background-color: #8b2eb0;
-    }
-
 }
