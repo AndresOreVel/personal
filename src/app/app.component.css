@@ -409,6 +409,10 @@ img{
         object-fit: cover;
     }
 
+    .proyectos img:hover{
+        transform: none;
+    }
+
     .lenguages {
         display: flex;
         flex-flow: row wrap;
