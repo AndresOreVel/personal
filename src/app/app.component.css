@@ -252,7 +252,15 @@ img{
 .multi{
     display: flex;
     align-items: center;
-    margin-bottom: 50px;
+    gap: 10px;
+    margin: 0 50px 50px 50px;
+}
+
+.multi div img{
+    width: 100%;
+    height: auto;
+    border-radius: 20px;
+    object-fit: cover;
 }
 
 .app-link{
@@ -404,13 +412,19 @@ img{
     }
 
     .multi{
+        width: 100%;
         margin-bottom: 50px;
     }
 
-    article{
-        max-inline-size: 66ch;
-        line-height: 1.65;
-        font-family: var(--Poppins-font);
+    .multi article p:first-child{
+        margin-bottom: 10px;
+    }
+
+    .multi div img{
+        width: 100%;
+        height: auto;
+        border-radius: 20px;
+        object-fit: cover;
     }
 
     .proyectos, .proyectos-front {
