@@ -78,7 +78,7 @@ p{
     font-family: var(--Poppins-font);
 }
 
-a{
+.btn-cv{
     text-decoration: none;
     color: white;
     font-family: system-ui;
@@ -87,7 +87,7 @@ a{
     border-radius: 5px;
 }
 
-a:hover{
+.btn-cv:hover{
     background-color: #8b2eb0;
     transition: .4s ease;
 }
@@ -249,6 +249,20 @@ img{
     align-items: center;
 }
 
+.multi{
+    display: flex;
+    align-items: center;
+}
+
+.app-link{
+    display: inline-flex;
+    gap: 10px;
+}
+
+.app-link + a{
+    margin-left: 20px;
+}
+
 .projects h2, .projects-front h2{
     margin-bottom: 10px;
 }
@@ -347,14 +361,7 @@ img{
         padding: 12px;
     }
 
-    .personal {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-    }
-
-    .myself {
+    .personal, .myself {
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -389,10 +396,20 @@ img{
         height: 60px;
     }
 
-    .projects, .projects-front {
+    .projects, .projects-front, .multi {
         display: flex;
         flex-direction: column;
         align-items: center;
+    }
+
+    .multi{
+        margin-bottom: 50px;
+    }
+
+    article{
+        max-inline-size: 66ch;
+        line-height: 1.65;
+        font-family: var(--Poppins-font);
     }
 
     .proyectos, .proyectos-front {
