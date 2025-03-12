@@ -252,6 +252,7 @@ img{
 .multi{
     display: flex;
     align-items: center;
+    margin-bottom: 50px;
 }
 
 .app-link{
