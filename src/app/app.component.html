@@ -1,146 +1,183 @@
-<div class="wrapped">
-  <!-- <div class="box header">Header -->
-  <!-- <span class="es">Español</span>
-    <input type="checkbox" class="check" (click)="language()">
-    <span class="en">Inglés</span> -->
-  <!-- </div> -->
-  <div class="box content">
-    <div class="theming">
-      <img src="../assets/images/dark.png" alt="background color mode" id="theme-icon" (click)="toggleTheme()">
+<div class="content">
+  <div class="theming">
+    <img src="../assets/images/dark.png" alt="background color mode" id="theme-icon" (click)="toggleTheme()">
+  </div>
+  <div class="personal">
+    <div class="personal__description">
+      <p>Hola, <img src="../assets/images/wave.png" alt="a hand wave"> soy</p>
+      <h2>Andrés Orellana</h2>
+      <article>
+        <p>Desarrollador full stack, buscando siempre la innovación.</p>
+      </article>
+      <a class="btn-cv" href="../assets/images/Currículum.pdf" download rel="noopener noreferrer">Descargar
+        <span>CV</span></a>
     </div>
-    <div class="personal">
-      <div class="second">
-        <p>Hola, <img src="../assets/images/wave.png" alt="a hand wave"> soy</p>
-        <h2>Andrés Orellana</h2>
-        <article>
-          <p>Desarrollador full stack, buscando siempre la innovación.</p>
-        </article>
-        <a class="btn-cv" href="../assets/images/Currículum.pdf" download rel="noopener noreferrer">Descargar <span>CV</span></a>
+  </div>
+  <div class="myself">
+    <img src="../assets/images/foto.jpg" alt="photo">
+    <div class="myself__description">
+      <p>Quién soy</p>
+      <h2>Sobre mí</h2>
+      <article>
+        <p>Soy una persona autodidacta, responsable y comprometida con mi trabajo.
+          Estoy constantemente aprendiendo nuevas tecnologías y herramientas
+          para mejorar mis habilidades. Debajo puede ver mis habilidades y tecnologías que uso.
+          No dude en ponerse en contacto conmigo si tiene alguna pregunta.</p>
+      </article>
+    </div>
+  </div>
+  <div class="frameworks">
+    <div class="frameworks__content">
+      <div class="frameworks__content__tecnologies">
+        <div class="frameworks__content__tecnologies__backend">
+          <img src="../assets/images/backend.png" alt="a gourgeous backend image">
+          <h3>Backend</h3>
+          <div class="frameworks__content__tecnologies__backend__languages">
+            <div>Java</div>
+            <div>NodeJS</div>
+            <div>PostgreSql</div>
+          </div>
+        </div>
+        <div class="frameworks__content__tecnologies__frontend">
+          <img src="../assets/images/frontend.png" alt="a beautiful frontend image">
+          <h3>Frontend</h3>
+          <div class="frameworks__content__tecnologies__frontend__languages">
+            <div>Html5</div>
+            <div>Css3</div>
+            <div>Angular</div>
+            <div>TypeScript</div>
+            <div>Sass</div>
+          </div>
+        </div>
       </div>
-    </div>
-    <div class="myself">
-      <img src="../assets/images/foto.jpg" alt="photo">
-      <div>
-        <p>Quién soy</p>
-        <h2>Sobre mí</h2>
-        <article>
-          <p>Soy una persona autodidacta, responsable y comprometida con mi trabajo.
-            Estoy constantemente aprendiendo nuevas tecnologías y herramientas
-            para mejorar mis habilidades. Debajo puede ver mis habilidades y tecnologías que uso.
-            No dude en ponerse en contacto conmigo si tiene alguna pregunta.</p>
-        </article>
-      </div>
-    </div>
-    <div class="frameworks">
-      <div class="second">
-        <div class="tecnologies">
-          <div class="backend">
-            <img src="../assets/images/backend.png" alt="a gourgeous backend image">
-            <h3>Backend</h3>
-            <div class="lenguages">
-              <div>Java</div>
-              <div>NodeJS</div>
-              <div>PostgreSql</div>
-            </div>
-          </div>
-          <div class="frontend">
-            <img src="../assets/images/frontend.png" alt="a beautiful frontend image">
-            <h3>Frontend</h3>
-            <div class="lenguages">
-              <div>Html5</div>
-              <div>Css3</div>
-              <div>Angular</div>
-              <div>TypeScript</div>
-            </div>
-          </div>
-        </div>
-        <div class="tools">
-          <div class="config">
-            <img src="../assets/images/tools.png" alt="an image of a tool">
-            <h3>Herramientas</h3>
-            <div class="lenguages">
-              <div>GitHub</div>
-              <div>PrimeNg</div>
-              <div>Npm</div>
-              <div>ThunderClient</div>
-              <div>Stripe</div>
-            </div>
-          </div>
-        </div>
-        <div class="projects">
-          <h2>Mis proyectos</h2>
-          <span></span>
-          <h3>Mobile Commerce</h3>
-          <article>
-            <p>Web app que consume una API REST, permitiendo a los usuarios buscar dispositivos, ver sus descripciones y 
-              realizar compras online de forma segura utilizando Stripe para el procesamiento de pagos.
-              Adicionalmente se generan estadísticas en cada proceso de compra.</p>
-          </article>
-          <div class="proyectos">
-            <img src="../assets/images/Imagen3.jpg" alt="a project image">
-            <img class="image2" src="../assets/images/Imagen1.jpg" alt="a project image">
-          </div>
-          <h3>Multi-step-form</h3>
-          <div class="multi">
-            <article>
-              <p>Aplicación web con un formulario multistep interactivo, diseñado para guiar a los usuarios a través de un proceso estructurado de manera 
-                intuitiva y eficiente.</p>
-                <p class="app-link">Prueba la aplicación aquí:</p>
-                <a href="https://steps-rosy-eight.vercel.app/" target="_blank" rel="noopener noreferrer">
-                  <img src="../assets/images/enlace.png" alt="Icono de enlace" style="width: 40px; height: auto;">
-                </a>
-                <a href="https://github.com/AndresOreVel/steps" target="_blank" rel="noopener noreferrer">
-                  <img src="../assets/images/github.png" alt="git hub icon" style="width: 40px; height: auto;">
-                </a>
-            </article>
-            <div>
-              <img src="../assets/images/step2.jpg" alt="step2 image">
-            </div>
-          </div>
-        </div>
-        <div class="projects-front">
-          <h2>Otros proyectos</h2>
-          <span></span>
-          <article>
-            <p>Proyectos adicionales de desarrollo frontend, diseñados tanto para dispositivos móviles como para escritorio.</p>
-          </article>
-          <div class="proyectos-front">
-            <a  class="image1" href="https://four-cards-snowy.vercel.app/" target="_blank" rel="noopener noreferrer">
-              <img src="../assets/images/Project1.jpg" alt="project 1 image">
-            </a>
-            <a href="https://link-social-sepia.vercel.app/" target="_blank" rel="noopener noreferrer">
-              <img src="../assets/images/Project2.jpg" alt="project 2 image">
-            </a>
-          </div>
-        </div>
-        <div class="personal">
-          <div class="second">
-            <h2>Contáctame</h2>
-            <div class="display">
-              <div class="contact">
-                <img src="../assets/images/icon-email.svg" alt="email icon">
-                <p>Email:</p>
-                <p>andres_orellana_9&#64;hotmail.com</p>
-              </div>
-              <div class="contact">
-                <img src="../assets/images/icon-whatsapp.svg" alt="whatsapp icon">
-                <p>Whatsapp:</p>
-                <p>+34 663257855</p>
-              </div>
-              <div class="imagenes">
-                <h3>Este sitio está desarrollado con:</h3>
-                <div class="icons">
-                  <img src="../assets/images/html-5.png" alt="hmtl icon">
-                  <img src="../assets/images/angular.png" alt="angular icon">
-                  <img src="../assets/images/css3.png" alt="ccs3 icon">
-                </div>
-              </div>
-            </div>
+      <div class="frameworks__content__tools">
+        <div class="frameworks__content__tools__config">
+          <img src="../assets/images/tools.png" alt="an image of a tool">
+          <h3>Herramientas</h3>
+          <div class="frameworks__content__tools__config__languages">
+            <div>GitHub</div>
+            <div>PrimeNg</div>
+            <div>Npm</div>
+            <div>ThunderClient</div>
+            <div>Stripe</div>
           </div>
         </div>
       </div>
     </div>
   </div>
-  <!-- <div class="box footer">Footer</div> -->
+  <div class="projects">
+    <h2>Mis proyectos</h2>
+    <div class="projects__content">
+      <div class="projects__content__images">
+        <img src="../assets/images/Imagen3.jpg" alt="a project image">
+        <img src="../assets/images/Imagen1.jpg" alt="a project image">
+      </div>
+      <div class="projects__content__description">
+        <h3>Mobile Commerce</h3>
+        <article>
+          <p>Web app que consume una API REST, permitiendo a los usuarios buscar dispositivos, ver sus descripciones y
+            realizar compras online de forma segura utilizando Stripe para el procesamiento de pagos.
+            Adicionalmente se generan estadísticas en cada proceso de compra.</p>
+        </article>
+      </div>
+    </div>
+    <div class="projects__content">
+      <div class="projects__content__images">
+        <div>
+          <img src="../assets/images/step2.jpg" alt="step2 image">
+        </div>
+      </div>
+      <div class="projects__content__description">
+        <h3>Multi-step-form</h3>
+        <article>
+          <p>Aplicación web con un formulario multistep interactivo, diseñado para guiar a los usuarios a través de un
+            proceso estructurado de manera
+            intuitiva y eficiente.</p>
+          <p>Prueba la aplicación aquí:</p>
+          <a href="https://steps-rosy-eight.vercel.app/" target="_blank" rel="noopener noreferrer">
+            <img src="../assets/images/enlace.png" alt="Icono de enlace" style="width: 40px; height: auto;">
+          </a>
+          <a href="https://github.com/AndresOreVel/steps" target="_blank" rel="noopener noreferrer">
+            <img src="../assets/images/github.png" alt="git hub icon" style="width: 40px; height: auto;">
+          </a>
+        </article>
+      </div>
+    </div>
+  </div>
+
+  <div class="other__projects">
+    <h2>Otros diseños</h2>
+    <div class="other__projects__article">
+      <article>
+        <p>Otros proyectos con distintas interacciones, así como un diseño tanto para dispositivo móvil como para escritorio</p>
+      </article>
+    </div>
+    <div class="desings">
+      <div class="desings__content">
+        <h3>Loop Studio</h3>
+        <div class="desings__content__proof">
+          <p>Prueba la aplicación aquí:</p>
+          <a href="https://loop-studio-beta.vercel.app/" target="_blank" rel="noopener noreferrer">
+            <img src="../assets/images/enlace.png" alt="Icono de enlace" style="width: 40px; height: auto;">
+          </a>
+        </div>
+        <img src="../assets/images/loop1.jpg" alt="">
+        <img src="../assets/images/loop2.jpg" alt="">
+      </div>
+      <div class="desings__content">
+        <h3>Room Homepage</h3>
+        <div class="desings__content__proof">
+          <p>Prueba la aplicación aquí:</p>
+          <a href="https://room-homepage-flame-kappa.vercel.app/#" target="_blank" rel="noopener noreferrer">
+            <img src="../assets/images/enlace.png" alt="Icono de enlace" style="width: 40px; height: auto;">
+          </a>
+        </div>
+        <img src="../assets/images/room1.jpg" alt="">
+        <img src="../assets/images/room3.jpg" alt="">
+      </div>
+    </div>
+  </div>
+
+  <!-- <div class="projects__front">
+    <h2>Otros proyectos</h2>
+    <span></span>
+    <article>
+      <p>Proyectos adicionales de desarrollo frontend, diseñados tanto para dispositivos móviles como para
+        escritorio.</p>
+    </article>
+    <div class="proyects__front__images">
+      <a class="image1" href="https://four-cards-snowy.vercel.app/" target="_blank" rel="noopener noreferrer">
+        <img src="../assets/images/Project1.jpg" alt="project 1 image">
+      </a>
+      <a href="https://link-social-sepia.vercel.app/" target="_blank" rel="noopener noreferrer">
+        <img src="../assets/images/Project2.jpg" alt="project 2 image">
+      </a>
+    </div>
+  </div> -->
+
+  <div class="contact">
+    <h2 class="contact__header">Contáctame</h2>
+    <div class="contact__description">
+      <div class="contact__description__info__email">
+        <img src="../assets/images/icon-email.svg" alt="email icon">
+        <p>Email:</p>
+        <p>andres_orellana_9&#64;hotmail.com</p>
+      </div>
+      <div class="contact__description__info__whatsapp">
+        <img src="../assets/images/icon-whatsapp.svg" alt="whatsapp icon">
+        <p>Whatsapp:</p>
+        <p>+34 663257855</p>
+      </div>
+      <div class="contact__description__info__images">
+        <h3>Este sitio está desarrollado con:</h3>
+        <div class="contact__description__info__images__icons">
+          <img src="../assets/images/html-5.png" alt="hmtl icon">
+          <img class="angular" src="../assets/images/angular.png" alt="angular icon">
+          <img src="../assets/images/css3.png" alt="ccs3 icon">
+          <img src="../assets/images/sass.png" alt="sass icon">
+        </div>
+      </div>
+    </div>
+  </div>
 </div>
 <router-outlet></router-outlet>

@@ -1,0 +1,77 @@
+/*
+Otra forma de hacer que ocupe todo el alto y ancho de pantalla
+es definir propiedades de 100 vh para el height y 100 vw para el width
+*/
+@use './styles/theming';
+@use './styles/about-me';
+@use './styles/frameworks';
+@use './styles/mixins';
+@use './styles/contact';
+@use './styles/projects';
+@use './styles/desings';
+
+.content{
+    overflow-y: auto;
+    color: black;
+    padding: 10px;
+    padding: 4rem 0;
+
+    @include mixins.breakpoint-down (mobile){
+        display: flex;
+        flex-direction: column;
+        overflow-y: auto;
+        padding: 1rem;
+    }
+}
+
+h2{
+    font-family: var(--Montserrat-font);
+}
+
+h3{
+    margin: 30px 0;
+    font-family: var(--Montserrat-font);
+}
+
+.es{
+    color: #333;
+}
+
+.en{
+    color: #00a1ff;
+}
+
+.check{
+    position: relative;
+    width: 50px;
+}
+
+.check::before{
+    content: '';
+    position: absolute;
+    width: 50px;
+    height: 25px;
+    background: #333;
+    border-radius: 25px;
+}
+
+.check::after{
+    content: '';
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    background: #ffff;
+    border-radius: 25px;
+    transition: 0.25s;
+    border: 2px solid #333;
+    box-sizing: border-box;
+}
+
+.check:checked::after{
+    left: 25px;
+    border: 2px solid #00a1ff;
+}
+
+.check:checked::before{
+    background: #00a1ff;
+}

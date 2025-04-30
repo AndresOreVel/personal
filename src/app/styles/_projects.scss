@@ -1,0 +1,65 @@
+@use 'mixins';
+
+.projects {
+    margin: 0 1rem;
+    @include mixins.clamp-fs;
+
+    @include mixins.breakpoint-down (mobile){
+        display: flex;
+        flex-direction: column;
+    }
+    
+    h2 {
+        margin-bottom: 4rem;
+        text-align: center;
+    }
+
+    &__content {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 4rem;
+        margin-block-end: 4rem;
+
+        @include mixins.breakpoint-down (mobile){
+            display: flex;
+            flex-direction: column;
+        }
+
+        &__images {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+
+            img {
+                display: block;
+                max-width: 500px;
+                height: auto;
+                border-radius: 20px;
+
+                @include mixins.breakpoint-down (mobile){
+                    max-width: 350px;
+                }
+            }
+        }
+
+        &__description{
+            @include mixins.breakpoint-down (mobile){
+                h3, article, a{
+                    text-align: center;
+                }
+            }
+        }
+    }
+
+    article{
+        line-height: 1.65;
+        font-family: var(--Poppins-font);
+
+        p{
+            font-size: 1.188rem;
+            max-inline-size: 66ch;
+        }
+    }
+
+}

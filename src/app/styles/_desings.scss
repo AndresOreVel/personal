@@ -1,0 +1,73 @@
+@use 'mixins';
+
+.other__projects{
+    margin-block-end: 100px;
+    @include mixins.clamp-fs;
+
+    @include mixins.breakpoint-down (mobile){
+        display: flex;
+        flex-direction: column;
+    }
+
+    h2{
+        text-align: center;
+        margin-block-end: 2rem;
+    }
+
+    &__article{
+        display: flex;
+        justify-content: center;
+    }
+
+    article{
+        text-align: center;
+        line-height: 1.65;
+        font-family: var(--Poppins-font);
+        
+        p{
+            max-inline-size: 66ch;
+            font-size: 1.188rem;
+        }
+    }
+}
+
+.desings{
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+    @include mixins.clamp-fs;
+
+    @include mixins.breakpoint-down (mobile){
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__content{
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+
+        @include mixins.breakpoint-down (mobile){
+            gap: 1rem;
+
+            h3{
+                text-align: center;
+            }
+        }
+
+        img{
+            max-width: 500px;
+            border-radius: 20px;
+        }
+        
+        &__proof{
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+
+            @include mixins.breakpoint-down (mobile){
+                justify-content: center;
+            }
+        }
+    }
+}

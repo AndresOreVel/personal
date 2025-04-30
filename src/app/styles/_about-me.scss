@@ -1,0 +1,110 @@
+@use 'mixins';
+
+.personal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    @include mixins.clamp-fs;
+
+    img{
+        @include mixins.image-medium;
+    }
+
+    &__description {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        margin-block-end: 100px;
+
+        h2 {
+            text-align: center;
+            margin: 0;
+            background: linear-gradient(to right, #ad5dcc, #6198d3);
+            -webkit-background-clip: text;
+            /*Para Chrome y Safari*/
+            background-clip: text;
+            color: transparent;
+        }
+
+        article{
+            max-inline-size: 66ch;
+            line-height: 1.65;
+            font-family: var(--Poppins-font);
+
+            @include mixins.breakpoint-down (mobile){
+                text-align: center;
+            }
+        }
+        
+        p{
+            font-family: var(--Poppins-font);
+        }
+
+        .btn-cv{
+            text-decoration: none;
+            color: white;
+            font-family: system-ui;
+            padding: 10px 20px;
+            background-color: #ad5dcc;
+            border-radius: 5px;
+        }
+        
+        .btn-cv:hover{
+            background-color: #8b2eb0;
+            transition: .4s ease;
+        }
+    }
+}
+
+.myself {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 75px;
+    @include mixins.clamp-fs;
+
+    @include mixins.breakpoint-down (mobile){
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    img {
+        width: 200px;
+        height: 200px;
+        border-radius: 30px;
+        object-fit: contain;
+    }
+    
+    p{
+        font-family: var(--Poppins-font);
+    }
+
+    &__description{
+
+        article{
+            line-height: 1.65;
+            font-family: var(--Poppins-font);
+
+            p{
+                font-size: 1.188rem;
+                max-inline-size: 66ch;
+            }
+        }
+
+        @include mixins.breakpoint-down (mobile){
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            article{
+                text-align: center;
+            }
+        }
+    }
+}

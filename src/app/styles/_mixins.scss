@@ -1,0 +1,54 @@
+$breakpoints-up: (
+    "mobile": 23.438rem,
+    "tablet": 64rem
+);
+
+$breakpoints-down: (
+    "mobile": 24.375rem,
+    "tablet": 63.9375rem
+);
+
+@mixin breakpoint-up ($size) {
+    @media (min-width: map-get($breakpoints-up, $size)) {
+        @content;
+    }
+}
+
+@mixin breakpoint-down ($size) {
+    @media (max-width: map-get($breakpoints-down, $size)) {
+        @content;
+    }
+}
+
+@mixin breakpoint-between ($min-size, $max-size){
+    @media (min-width: map-get($breakpoints-up, $min-size)) and (max-width: map-get($breakpoints-down, $max-size)){
+        @content;
+    }
+}
+
+@mixin orientation ($type: landscape) {
+    @media (orientation: #{$type}) {
+        @content;
+    }
+}
+
+@mixin flex-column {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin image-size($size: 125px){
+    width: $size;
+    height: $size;
+}
+
+@mixin image-medium($size: 60px){
+    width: $size;
+    height: $size;
+}
+
+@mixin clamp-fs{
+    font-size: clamp(1rem, 0.75rem + 1vw, 2.5rem);
+}
