@@ -12,7 +12,7 @@ es definir propiedades de 100 vh para el height y 100 vw para el width
   width: 60px;
   height: 60px;
 }
-@media (max-width: 24.375rem) {
+@media (max-width: 25.625rem) {
   .theming {
     margin-right: 10px;
   }
@@ -55,7 +55,7 @@ es definir propiedades de 100 vh para el height y 100 vw para el width
   line-height: 1.65;
   font-family: var(--Poppins-font);
 }
-@media (max-width: 24.375rem) {
+@media (max-width: 25.625rem) {
   .personal__description article {
     text-align: center;
   }
@@ -83,7 +83,7 @@ es definir propiedades de 100 vh para el height y 100 vw para el width
   gap: 75px;
   font-size: clamp(1rem, 0.75rem + 1vw, 2.5rem);
 }
-@media (max-width: 24.375rem) {
+@media (max-width: 25.625rem) {
   .myself {
     display: flex;
     flex-direction: column;
@@ -109,7 +109,7 @@ es definir propiedades de 100 vh para el height y 100 vw para el width
   font-size: 1.188rem;
   max-inline-size: 66ch;
 }
-@media (max-width: 24.375rem) {
+@media (max-width: 25.625rem) {
   .myself__description {
     display: flex;
     flex-direction: column;
@@ -126,7 +126,7 @@ es definir propiedades de 100 vh para el height y 100 vw para el width
   margin-block-end: 100px;
   font-size: clamp(1rem, 0.75rem + 1vw, 2.5rem);
 }
-@media (max-width: 24.375rem) {
+@media (max-width: 25.625rem) {
   .frameworks {
     display: flex;
     flex-direction: column;
@@ -138,7 +138,7 @@ es definir propiedades de 100 vh para el height y 100 vw para el width
   display: grid;
   grid-template-rows: repeat(2, 1fr);
 }
-@media (max-width: 24.375rem) {
+@media (max-width: 25.625rem) {
   .frameworks__content {
     display: flex;
     flex-direction: column;
@@ -150,7 +150,7 @@ es definir propiedades de 100 vh para el height y 100 vw para el width
   grid-template-columns: repeat(2, 1fr);
   gap: 2.5rem;
 }
-@media (max-width: 24.375rem) {
+@media (max-width: 25.625rem) {
   .frameworks__content__tecnologies {
     display: flex;
     flex-direction: column;
@@ -160,7 +160,7 @@ es definir propiedades de 100 vh para el height y 100 vw para el width
   display: flex;
   justify-content: center;
 }
-@media (max-width: 24.375rem) {
+@media (max-width: 25.625rem) {
   .frameworks__content__tools {
     display: flex;
     flex-direction: column;
@@ -176,7 +176,7 @@ es definir propiedades de 100 vh para el height y 100 vw para el width
   width: 125px;
   height: 125px;
 }
-@media (max-width: 24.375rem) {
+@media (max-width: 25.625rem) {
   .frameworks__content__tecnologies__backend img, .frameworks__content__tecnologies__frontend img, .frameworks__content__tools__config img {
     width: 60px;
     height: 60px;
@@ -203,7 +203,7 @@ es definir propiedades de 100 vh para el height y 100 vw para el width
   margin-block-start: 6rem;
   font-size: clamp(1rem, 0.75rem + 1vw, 2.5rem);
 }
-@media (max-width: 24.375rem) {
+@media (max-width: 25.625rem) {
   .contact {
     display: grid;
     place-content: center;
@@ -221,7 +221,7 @@ es definir propiedades de 100 vh para el height y 100 vw para el width
   justify-content: center;
   gap: 1rem;
 }
-@media (max-width: 24.375rem) {
+@media (max-width: 25.625rem) {
   .contact__description {
     display: flex;
     justify-content: center;
@@ -236,7 +236,7 @@ es definir propiedades de 100 vh para el height y 100 vw para el width
   width: 40px;
   height: 40px;
 }
-@media (max-width: 24.375rem) {
+@media (max-width: 25.625rem) {
   .contact__description__info__email, .contact__description__info__whatsapp {
     display: flex;
   }
@@ -262,7 +262,7 @@ es definir propiedades de 100 vh para el height y 100 vw para el width
   width: 150px;
   height: 100px;
 }
-@media (max-width: 24.375rem) {
+@media (max-width: 25.625rem) {
   .contact__description__info__images {
     display: flex;
     flex-direction: column;
@@ -281,7 +281,7 @@ es definir propiedades de 100 vh para el height y 100 vw para el width
   margin: 0 1rem;
   font-size: clamp(1rem, 0.75rem + 1vw, 2.5rem);
 }
-@media (max-width: 24.375rem) {
+@media (max-width: 25.625rem) {
   .projects {
     display: flex;
     flex-direction: column;
@@ -298,7 +298,7 @@ es definir propiedades de 100 vh para el height y 100 vw para el width
   gap: 4rem;
   margin-block-end: 4rem;
 }
-@media (max-width: 24.375rem) {
+@media (max-width: 25.625rem) {
   .projects__content {
     display: flex;
     flex-direction: column;
@@ -315,12 +315,12 @@ es definir propiedades de 100 vh para el height y 100 vw para el width
   height: auto;
   border-radius: 20px;
 }
-@media (max-width: 24.375rem) {
+@media (max-width: 25.625rem) {
   .projects__content__images img {
     max-width: 350px;
   }
 }
-@media (max-width: 24.375rem) {
+@media (max-width: 25.625rem) {
   .projects__content__description h3, .projects__content__description article, .projects__content__description a {
     text-align: center;
   }
@@ -338,7 +338,7 @@ es definir propiedades de 100 vh para el height y 100 vw para el width
   margin-block-end: 100px;
   font-size: clamp(1rem, 0.75rem + 1vw, 2.5rem);
 }
-@media (max-width: 24.375rem) {
+@media (max-width: 25.625rem) {
   .other__projects {
     display: flex;
     flex-direction: column;
@@ -368,7 +368,7 @@ es definir propiedades de 100 vh para el height y 100 vw para el width
   gap: 3rem;
   font-size: clamp(1rem, 0.75rem + 1vw, 2.5rem);
 }
-@media (max-width: 24.375rem) {
+@media (max-width: 25.625rem) {
   .desings {
     display: flex;
     flex-direction: column;
@@ -379,7 +379,7 @@ es definir propiedades de 100 vh para el height y 100 vw para el width
   flex-direction: column;
   gap: 2rem;
 }
-@media (max-width: 24.375rem) {
+@media (max-width: 25.625rem) {
   .desings__content {
     gap: 1rem;
   }
@@ -396,7 +396,7 @@ es definir propiedades de 100 vh para el height y 100 vw para el width
   align-items: center;
   gap: 1rem;
 }
-@media (max-width: 24.375rem) {
+@media (max-width: 25.625rem) {
   .desings__content__proof {
     justify-content: center;
   }
@@ -408,7 +408,7 @@ es definir propiedades de 100 vh para el height y 100 vw para el width
   padding: 10px;
   padding: 4rem 0;
 }
-@media (max-width: 24.375rem) {
+@media (max-width: 25.625rem) {
   .content {
     display: flex;
     flex-direction: column;
