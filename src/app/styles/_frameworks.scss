@@ -15,6 +15,10 @@
         padding: 0 2rem;
     }
 
+    @include mixins.landscape-mobile{
+        padding: 0 2rem;
+    }
+
     &__content {
         display: grid;
         grid-template-rows: repeat(2, 1fr);
