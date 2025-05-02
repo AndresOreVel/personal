@@ -1,11 +1,11 @@
 $breakpoints-up: (
-    "mobile": 23.438rem,
-    "tablet": 64rem
+    "mobile": 36rem,
+    "tablet": 48rem
 );
 
 $breakpoints-down: (
     "mobile": 36rem,
-    "tablet": 63.9375rem
+    "tablet": 48rem
 );
 
 @mixin breakpoint-up ($size) {
@@ -32,11 +32,22 @@ $breakpoints-down: (
     }
 }
 
+@mixin landscape-mobile {
+    @media (max-width: 52.75rem) and (orientation: landscape){
+        @content;
+    }
+}
+
 @mixin flex-column {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+
+@mixin fc {
+    display: flex;
+    flex-direction: column;
 }
 
 @mixin image-size($size: 125px){

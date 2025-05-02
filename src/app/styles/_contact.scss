@@ -88,6 +88,11 @@
                     height: 50px;
                 }
             }
+            
+            @include mixins.breakpoint-between (mobile, tablet){
+                display: flex;
+                flex-direction: column;
+            }
         }
     }
 }

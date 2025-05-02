@@ -5,8 +5,11 @@
     @include mixins.clamp-fs;
 
     @include mixins.breakpoint-down (mobile){
-        display: flex;
-        flex-direction: column;
+        @include mixins.fc;
+    }
+
+    @include mixins.landscape-mobile{
+        @include mixins.fc;
     }
     
     h2 {
@@ -22,13 +25,19 @@
         margin-block-end: 4rem;
 
         @include mixins.breakpoint-down (mobile){
-            display: flex;
-            flex-direction: column;
+            @include mixins.fc;
+        }
+
+        @include mixins.breakpoint-between (mobile, tablet){
+            @include mixins.fc;
+        }
+
+        @include mixins.landscape-mobile{
+            @include mixins.fc;
         }
 
         &__images {
-            display: flex;
-            flex-direction: column;
+            @include mixins.fc;
             gap: 1rem;
 
             img {
@@ -40,6 +49,14 @@
                 @include mixins.breakpoint-down (mobile){
                     max-width: 350px;
                 }
+
+                @include mixins.breakpoint-between (mobile, tablet){
+                    max-width: 700px;
+                }
+
+                @include mixins.landscape-mobile{
+                    max-width: 800px;
+                }
             }
         }
 
@@ -48,6 +65,14 @@
                 h3, article, a{
                     text-align: center;
                 }
+            }
+
+            @include mixins.breakpoint-between (mobile, tablet){
+                padding: 0 2rem;
+            }
+
+            @include mixins.landscape-mobile{
+                padding: 0 2rem;
             }
         }
     }
@@ -59,6 +84,11 @@
         p{
             font-size: 1.188rem;
             max-inline-size: 66ch;
+        }
+
+        img{
+            width: 50px;
+            height: 50px;
         }
     }
 

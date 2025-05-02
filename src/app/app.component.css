@@ -83,6 +83,12 @@ es definir propiedades de 100 vh para el height y 100 vw para el width
   gap: 75px;
   font-size: clamp(1rem, 0.75rem + 1vw, 2.5rem);
 }
+.myself__img {
+  max-width: 200px;
+  border-radius: 10px;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
 @media (max-width: 36rem) {
   .myself {
     display: flex;
@@ -91,12 +97,15 @@ es definir propiedades de 100 vh para el height y 100 vw para el width
     align-items: center;
   }
 }
-.myself img {
-  width: 200px;
-  height: 200px;
-  border-radius: 30px;
-  -o-object-fit: contain;
-     object-fit: contain;
+@media (min-width: 36rem) and (max-width: 48rem) {
+  .myself {
+    margin: 0 2rem;
+  }
+}
+@media (orientation: landscape) {
+  .myself {
+    margin: 0 2rem;
+  }
 }
 .myself p {
   font-family: var(--Poppins-font);
@@ -132,6 +141,11 @@ es definir propiedades de 100 vh para el height y 100 vw para el width
     flex-direction: column;
     margin-block-start: 50px;
     margin-block-end: 50px;
+  }
+}
+@media (min-width: 36rem) and (max-width: 48rem) {
+  .frameworks {
+    padding: 0 2rem;
   }
 }
 .frameworks__content {
@@ -171,6 +185,16 @@ es definir propiedades de 100 vh para el height y 100 vw para el width
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+@media (min-width: 36rem) and (max-width: 48rem) {
+  .frameworks__content__tecnologies__backend, .frameworks__content__tecnologies__frontend, .frameworks__content__tools__config {
+    justify-content: flex-start;
+  }
+}
+@media (orientation: landscape) {
+  .frameworks__content__tecnologies__backend, .frameworks__content__tecnologies__frontend, .frameworks__content__tools__config {
+    justify-content: flex-start;
+  }
 }
 .frameworks__content__tecnologies__backend img, .frameworks__content__tecnologies__frontend img, .frameworks__content__tools__config img {
   width: 125px;
@@ -276,12 +300,24 @@ es definir propiedades de 100 vh para el height y 100 vw para el width
     height: 50px;
   }
 }
+@media (min-width: 36rem) and (max-width: 48rem) {
+  .contact__description__info__images {
+    display: flex;
+    flex-direction: column;
+  }
+}
 
 .projects {
   margin: 0 1rem;
   font-size: clamp(1rem, 0.75rem + 1vw, 2.5rem);
 }
 @media (max-width: 36rem) {
+  .projects {
+    display: flex;
+    flex-direction: column;
+  }
+}
+@media (max-width: 52.75rem) and (orientation: landscape) {
   .projects {
     display: flex;
     flex-direction: column;
@@ -304,6 +340,18 @@ es definir propiedades de 100 vh para el height y 100 vw para el width
     flex-direction: column;
   }
 }
+@media (min-width: 36rem) and (max-width: 48rem) {
+  .projects__content {
+    display: flex;
+    flex-direction: column;
+  }
+}
+@media (max-width: 52.75rem) and (orientation: landscape) {
+  .projects__content {
+    display: flex;
+    flex-direction: column;
+  }
+}
 .projects__content__images {
   display: flex;
   flex-direction: column;
@@ -320,9 +368,29 @@ es definir propiedades de 100 vh para el height y 100 vw para el width
     max-width: 350px;
   }
 }
+@media (min-width: 36rem) and (max-width: 48rem) {
+  .projects__content__images img {
+    max-width: 700px;
+  }
+}
+@media (max-width: 52.75rem) and (orientation: landscape) {
+  .projects__content__images img {
+    max-width: 800px;
+  }
+}
 @media (max-width: 36rem) {
   .projects__content__description h3, .projects__content__description article, .projects__content__description a {
     text-align: center;
+  }
+}
+@media (min-width: 36rem) and (max-width: 48rem) {
+  .projects__content__description {
+    padding: 0 2rem;
+  }
+}
+@media (max-width: 52.75rem) and (orientation: landscape) {
+  .projects__content__description {
+    padding: 0 2rem;
   }
 }
 .projects article {
@@ -333,6 +401,10 @@ es definir propiedades de 100 vh para el height y 100 vw para el width
   font-size: 1.188rem;
   max-inline-size: 66ch;
 }
+.projects article img {
+  width: 50px;
+  height: 50px;
+}
 
 .other__projects {
   margin-block-end: 100px;
@@ -342,6 +414,20 @@ es definir propiedades de 100 vh para el height y 100 vw para el width
   .other__projects {
     display: flex;
     flex-direction: column;
+  }
+}
+@media (min-width: 36rem) and (max-width: 48rem) {
+  .other__projects {
+    display: flex;
+    flex-direction: column;
+    padding: 0 2rem;
+  }
+}
+@media (max-width: 52.75rem) and (orientation: landscape) {
+  .other__projects {
+    display: flex;
+    flex-direction: column;
+    padding: 0 2rem;
   }
 }
 .other__projects h2 {
@@ -374,6 +460,18 @@ es definir propiedades de 100 vh para el height y 100 vw para el width
     flex-direction: column;
   }
 }
+@media (min-width: 36rem) and (max-width: 48rem) {
+  .desings {
+    display: flex;
+    flex-direction: column;
+  }
+}
+@media (max-width: 52.75rem) and (orientation: landscape) {
+  .desings {
+    display: flex;
+    flex-direction: column;
+  }
+}
 .desings__content {
   display: flex;
   flex-direction: column;
@@ -387,14 +485,33 @@ es definir propiedades de 100 vh para el height y 100 vw para el width
     text-align: center;
   }
 }
+@media (min-width: 36rem) and (max-width: 48rem) {
+  .desings__content {
+    gap: 1rem;
+  }
+}
 .desings__content img {
   max-width: 500px;
   border-radius: 20px;
+}
+@media (min-width: 36rem) and (max-width: 48rem) {
+  .desings__content img {
+    max-width: 700px;
+  }
+}
+@media (max-width: 52.75rem) and (orientation: landscape) {
+  .desings__content img {
+    max-width: 800px;
+  }
 }
 .desings__content__proof {
   display: flex;
   align-items: center;
   gap: 1rem;
+}
+.desings__content__proof img {
+  width: 50px;
+  height: 50px;
 }
 @media (max-width: 36rem) {
   .desings__content__proof {

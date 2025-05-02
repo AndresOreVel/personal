@@ -17,8 +17,7 @@ es definir propiedades de 100 vh para el height y 100 vw para el width
     padding: 4rem 0;
 
     @include mixins.breakpoint-down (mobile){
-        display: flex;
-        flex-direction: column;
+        @include mixins.fc;
         overflow-y: auto;
         padding: 1rem;
     }

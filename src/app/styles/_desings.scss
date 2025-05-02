@@ -5,8 +5,17 @@
     @include mixins.clamp-fs;
 
     @include mixins.breakpoint-down (mobile){
-        display: flex;
-        flex-direction: column;
+        @include mixins.fc;
+    }
+
+    @include mixins.breakpoint-between (mobile, tablet){
+        @include mixins.fc;
+        padding: 0 2rem;
+    }
+
+    @include mixins.landscape-mobile{
+        @include mixins.fc;
+        padding: 0 2rem;
     }
 
     h2{
@@ -38,13 +47,19 @@
     @include mixins.clamp-fs;
 
     @include mixins.breakpoint-down (mobile){
-        display: flex;
-        flex-direction: column;
+        @include mixins.fc;
+    }
+
+    @include mixins.breakpoint-between (mobile, tablet){
+        @include mixins.fc;
+    }
+
+    @include mixins.landscape-mobile{
+        @include mixins.fc;
     }
 
     &__content{
-        display: flex;
-        flex-direction: column;
+        @include mixins.fc;
         gap: 2rem;
 
         @include mixins.breakpoint-down (mobile){
@@ -55,15 +70,32 @@
             }
         }
 
+        @include mixins.breakpoint-between (mobile, tablet){
+            gap: 1rem;
+        }
+
         img{
             max-width: 500px;
             border-radius: 20px;
+
+            @include mixins.breakpoint-between (mobile, tablet){
+                max-width: 700px;
+            }
+
+            @include mixins.landscape-mobile{
+                max-width: 800px;
+            }
         }
         
         &__proof{
             display: flex;
             align-items: center;
             gap: 1rem;
+
+            img{
+                width: 50px;
+                height: 50px;
+            }
 
             @include mixins.breakpoint-down (mobile){
                 justify-content: center;
