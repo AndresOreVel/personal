@@ -33,7 +33,7 @@ $breakpoints-down: (
 }
 
 @mixin landscape-mobile {
-    @media (max-width: 55rem) and (orientation: landscape){
+    @media (max-width: 64rem) and (orientation: landscape){
         @content;
     }
 }

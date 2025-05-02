@@ -148,7 +148,7 @@ es definir propiedades de 100 vh para el height y 100 vw para el width
     padding: 0 2rem;
   }
 }
-@media (max-width: 55rem) and (orientation: landscape) {
+@media (max-width: 64rem) and (orientation: landscape) {
   .frameworks {
     padding: 0 2rem;
   }
@@ -322,7 +322,7 @@ es definir propiedades de 100 vh para el height y 100 vw para el width
     flex-direction: column;
   }
 }
-@media (max-width: 55rem) and (orientation: landscape) {
+@media (max-width: 64rem) and (orientation: landscape) {
   .projects {
     display: flex;
     flex-direction: column;
@@ -351,7 +351,7 @@ es definir propiedades de 100 vh para el height y 100 vw para el width
     flex-direction: column;
   }
 }
-@media (max-width: 55rem) and (orientation: landscape) {
+@media (max-width: 64rem) and (orientation: landscape) {
   .projects__content {
     display: flex;
     flex-direction: column;
@@ -378,7 +378,7 @@ es definir propiedades de 100 vh para el height y 100 vw para el width
     max-width: 700px;
   }
 }
-@media (max-width: 55rem) and (orientation: landscape) {
+@media (max-width: 64rem) and (orientation: landscape) {
   .projects__content__images img {
     max-width: 800px;
   }
@@ -393,7 +393,7 @@ es definir propiedades de 100 vh para el height y 100 vw para el width
     padding: 0 2rem;
   }
 }
-@media (max-width: 55rem) and (orientation: landscape) {
+@media (max-width: 64rem) and (orientation: landscape) {
   .projects__content__description {
     padding: 0 2rem;
   }
@@ -428,7 +428,7 @@ es definir propiedades de 100 vh para el height y 100 vw para el width
     padding: 0 2rem;
   }
 }
-@media (max-width: 55rem) and (orientation: landscape) {
+@media (max-width: 64rem) and (orientation: landscape) {
   .other__projects {
     display: flex;
     flex-direction: column;
@@ -471,7 +471,7 @@ es definir propiedades de 100 vh para el height y 100 vw para el width
     flex-direction: column;
   }
 }
-@media (max-width: 55rem) and (orientation: landscape) {
+@media (max-width: 64rem) and (orientation: landscape) {
   .desings {
     display: flex;
     flex-direction: column;
@@ -504,7 +504,7 @@ es definir propiedades de 100 vh para el height y 100 vw para el width
     max-width: 700px;
   }
 }
-@media (max-width: 55rem) and (orientation: landscape) {
+@media (max-width: 64rem) and (orientation: landscape) {
   .desings__content img {
     max-width: 800px;
   }
