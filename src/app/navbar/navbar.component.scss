@@ -52,6 +52,7 @@
             position: relative;
             color: #E0E0E0;
             cursor: pointer;
+            -webkit-tap-highlight-color: transparent;
 
             &::after {
                 content: "";
