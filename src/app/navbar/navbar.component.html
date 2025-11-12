@@ -1,0 +1,16 @@
+<nav class="nav__container">
+  <div class="nav__container__box" [ngClass]="{'active': menuActive}">
+    <a class="nav__container__box__item" (click)="scrollToSection('about')">
+      <span>Sobre mí</span>
+    </a>
+    <a class="nav__container__box__item" (click)="scrollToSection('projects')">
+      <span>Proyectos</span>
+    </a>
+    <a class="nav__container__box__item" (click)="scrollToSection('contact')">
+      <span>Contacto</span>
+    </a>
+  </div>
+  <div class="nav__container__toggle" (click)="toggleButton()">
+    <img [src]="currentImage" alt="more icon">
+  </div>
+</nav>

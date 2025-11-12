@@ -1,0 +1,50 @@
+<section id="contact">
+    <h2 class="contact__header">Ponte en contacto</h2>
+    <div class="contact__body">
+        <div class="contact__body__card">
+            <form #contactForm="ngForm" (ngSubmit)="onSubmit(contactForm)" class="form">
+                <h3>Envíame un mensaje</h3>
+                <div class="box">
+                    <label for="name">Nombre*</label>
+                    <span class="error shake" *ngIf="nameCtrl.invalid && nameCtrl.touched">Campo obligatorio</span>
+                </div>
+                <input [(ngModel)]="name" #nameCtrl="ngModel" type="text" name="name" id="name" placeholder="Tu nombre completo" required>
+                <div class="box">
+                    <label for="email">Email*</label>
+                    <span class="error shake" *ngIf="email && !isEmailValid()">Formato incorrecto de correo</span>
+                </div>
+                <input [(ngModel)]="email" type="email" name="email" id="email" placeholder="tu.email@ejemplo.com" required>
+                <div class="box">
+                    <label for="subject">Asunto*</label>
+                    <span class="error shake" *ngIf="subjectCtrl.invalid && subjectCtrl.touched">Campo obligatorio</span>
+                </div>
+                <input [(ngModel)]="subject" #subjectCtrl="ngModel" type="text" name="subject" id="subject" placeholder="Proyecto, colaboración, etc." required>
+                <div class="box">
+                    <label for="message">Mensaje*</label>
+                    <span class="error shake" *ngIf="messageCtrl.invalid && messageCtrl.touched">Campo obligatorio</span>
+                </div>
+                <textarea [(ngModel)]="message" #messageCtrl="ngModel" name="message" id="message" placeholder="Cuéntame sobre tu proyecto" required></textarea>
+                <button [disabled]="!isEmailValid() || contactForm.invalid" type="submit">Enviar mensaje</button>
+            </form>
+        </div>
+        <div class="contact__body__card">
+            <div class="card__information">
+                <h3>Contacto</h3>
+                <div class="card__information__email">
+                    <img src="../assets/images/email.png" alt="email icon">
+                    <div class="card__information__email-deep">
+                        <p>Email</p>
+                        <p>andres_orellana_9&#64;hotmail.com</p>
+                    </div>
+                </div>
+                <div class="card__information__phone">
+                    <img src="../assets/images/phone.png" alt="phone icon">
+                    <div class="card__information__phone-deep">
+                        <p>Teléfono</p>
+                        <p>+34 663257855</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

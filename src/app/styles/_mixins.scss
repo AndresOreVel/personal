@@ -1,11 +1,13 @@
 $breakpoints-up: (
-    "mobile": 36rem,
-    "tablet": 48rem
+    "mobile": 33.75rem,
+    "tablet": 48rem,
+    "desktop": 64rem
 );
 
 $breakpoints-down: (
-    "mobile": 36rem,
-    "tablet": 48rem
+    "mobile": 33.75rem,
+    "tablet": 48rem,
+    "desktop": 64rem
 );
 
 @mixin breakpoint-up ($size) {

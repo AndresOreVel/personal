@@ -1,0 +1,124 @@
+@use '../styles/variables' as *;
+@use '../styles/mixins' as *;
+
+#about {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background: linear-gradient(to bottom,
+            #040a05 0%,
+            #031219 50%,
+            #051c25 100%);
+    padding-bottom: 5rem;
+
+    @include breakpoint-down (mobile){
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        gap: 3rem;
+    }
+
+    @include breakpoint-down (tablet){
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        gap: 3rem;
+    }
+
+    .personal {
+        @include breakpoint-down (mobile){
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        &__description {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
+
+            @include breakpoint-down (mobile){
+                justify-content: center;
+            }
+
+            h2 {
+                color: $cian;
+                font-size: 4.5rem;
+                text-shadow: 0 0 60px hsla(197, 92%, 56%, 0.5);
+                font-family: var(--Montserrat-font);
+
+                @include breakpoint-down (mobile){
+                    text-align: center;
+                }
+
+                @include breakpoint-down (tablet){
+                    text-align: center;
+                }
+            }
+
+            article {
+                max-inline-size: 66ch;
+                line-height: 1.5;
+                font-family: var(--Poppins-font);
+
+                @include breakpoint-down (mobile){
+                    text-align: center;
+                }
+
+                @include breakpoint-down (tablet){
+                    text-align: center;
+                }
+            }
+
+            p {
+                color: $textForeground;
+                font-size: 1.5rem;
+            }
+
+            button {
+                cursor: pointer;
+                background-color: $background;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                gap: 1rem;
+                border: 0.015rem solid $cian;
+                border-radius: 4px;
+                padding: 1rem;
+                font-size: 1.125rem;
+                font-family: var(--Poppins-font);
+
+                img {
+                    width: 30px;
+                }
+
+                a {
+                    color: white;
+                }
+
+                &:hover {
+                    background-color: rgba($cian, 0.15);
+                    transition: all 0.3s ease-in-out;
+
+                    a {
+                        color: $cian;
+                    }
+                }
+            }
+        }
+    }
+
+    .myself {
+        &__img {
+            width: 300px;
+            border-radius: 16px;
+        }
+    }
+}
+
+h2,
+p {
+    color: white;
+}
