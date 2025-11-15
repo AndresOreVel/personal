@@ -37,22 +37,22 @@
             -webkit-backdrop-filter: blur(12px);
             border: 1px solid $borderColor;
             transition: all 0.3 ease;
-            -webkit-tap-highlight-color: transparent;
             
             @include breakpoint-down (tablet){
                 width: 700px;
                 height: 300px;
             }
-
+            
             &:hover {
                 box-shadow: 0 10px 30px $cian;
             }
         }
-
+        
         &__item {
             position: relative;
             color: #E0E0E0;
             cursor: pointer;
+            -webkit-tap-highlight-color: transparent;
 
             &::after {
                 content: "";
