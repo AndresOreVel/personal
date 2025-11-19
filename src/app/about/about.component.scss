@@ -77,7 +77,7 @@
                 font-size: 1.5rem;
             }
 
-            button {
+            .btn-cv {
                 cursor: pointer;
                 background-color: $background;
                 display: flex;
@@ -89,22 +89,16 @@
                 padding: 1rem;
                 font-size: 1.125rem;
                 font-family: var(--Poppins-font);
+                color: white;
 
                 img {
                     width: 30px;
                 }
 
-                a {
-                    color: white;
-                }
-
                 &:hover {
                     background-color: rgba($cian, 0.15);
                     transition: all 0.3s ease-in-out;
-
-                    a {
-                        color: $cian;
-                    }
+                    color: $cian;
                 }
             }
         }
