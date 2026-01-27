@@ -49,6 +49,10 @@
             align-items: center;
         }
 
+        @include landscape-mobile {
+            padding: 0 2rem;
+        }
+
         @include breakpoint-down (tablet) {
             display: flex;
             flex-direction: column;

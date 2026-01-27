@@ -18,6 +18,10 @@
         gap: 3rem;
     }
 
+    @include landscape-mobile {
+        padding: 2rem;
+    }
+
     @include breakpoint-down (tablet){
         flex-direction: column;
         justify-content: space-between;
@@ -90,6 +94,10 @@
                 font-size: 1.125rem;
                 font-family: var(--Poppins-font);
                 color: white;
+
+                @include landscape-mobile {
+                    max-width: 450px;
+                }
 
                 img {
                     width: 30px;

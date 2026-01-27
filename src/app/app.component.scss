@@ -30,6 +30,10 @@ es definir propiedades de 100 vh para el height y 100 vw para el width
         padding-right: 2rem;
     }
 
+    @include landscape-mobile {
+        padding-right: 2rem;
+    }
+
     @include breakpoint-down (tablet) {
         padding-right: 2rem;
     }
